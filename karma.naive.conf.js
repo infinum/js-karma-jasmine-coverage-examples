@@ -8,7 +8,6 @@ module.exports = function (config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
-      require('karma-sabarivka-reporter'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma')
@@ -31,17 +30,9 @@ module.exports = function (config) {
       reporters: [
         { type: 'html' },
         { type: 'text-summary' }
-      ],
-      include: [
-        // Specify include pattern(s) first
-        './src/app/**/*.(ts|js)',
-        '!./src/app/testing/**',
-        '!./src/**/*.spec.(ts|js)',
-        '!./src/**/*.testing.*.(ts|js)',
-        '!./src/**/*.module.(ts|js)'
       ]
     },
-    reporters: ['progress', 'kjhtml', 'sabarivka'],
+    reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
