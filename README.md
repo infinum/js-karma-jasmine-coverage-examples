@@ -1,3 +1,5 @@
+# Karma + jasmine coverage examples
+
 Example repo for the [Testing - Coverage sub-chapter of the Angular handbook](https://infinum.com/handbook/frontend/angular/angular-guidelines-and-best-practices/testing#coverage).
 
 ## Running unit tests
